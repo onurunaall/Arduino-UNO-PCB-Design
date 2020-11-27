@@ -1,0 +1,130 @@
+﻿<StackupDocument SerializerVersion="1.1.0.0" Version="1.0.0.0" Id="700d0efd-8793-4440-b2ae-f7e453d6f592" RevisionId="97739da0-ad3d-4cc9-a733-b3107df7ac2d" RevisionDate="2020-01-24T20:32:48.0696866Z" xmlns="http://altium.com/ns/LayerStackManager">
+  <FeatureSet>
+    <Feature Id="c8939e8a-fd0e-4d52-8860-b7a98f452016">Standard Stackup</Feature>
+    <Feature Id="5277e6a4-9e5f-4f54-951f-dc18cfeb7530">Rigid/Flex</Feature>
+    <Feature Id="e3df2b86-5f1b-49ca-b266-d1ae57f0ba6f">Impedance Calculator</Feature>
+  </FeatureSet>
+  <TypeExtensions />
+  <Stackup Type="Standard" RoughnessType="NoRoughness" RoughnessFactorSR="0.1um" RoughnessFactorRF="2%">
+    <Stacks>
+      <Stack Id="85c34f60-f522-4245-a156-52c49779989b" Name="Board Layer Stack">
+        <Layers>
+          <Layer Id="3ab488cb-07ad-4d7c-b0ee-2b54cee1f04c" TypeId="c7ef040e-8d00-490b-b00c-a7e7823ff174" Name="Top Overlay">
+            <Properties />
+          </Layer>
+          <Layer Id="d205398c-7081-482f-8f16-66371ced2806" TypeId="7b384237-13d8-4318-8bcb-accd8d9a51e7" Name="Top Solder">
+            <Properties>
+              <Property Name="Thickness" Type="LengthValue">0.01mm</Property>
+              <Property Name="Material" Type="String">Solder Resist</Property>
+              <Property Name="DielectricConstant" Type="DimensionlessValue">3.5</Property>
+              <Property Name="CoverlayExpansion" Type="LengthValue">0mm</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="16274362-9bff-4b3e-a340-40af0d2daedb" TypeId="f4eccd87-2cfb-4f37-be50-4f3a272b4d01" Name="L1">
+            <Properties>
+              <Property Name="Thickness" Type="LengthValue">0.036mm</Property>
+              <Property Name="ComponentPlacement" Type="Altium.LayerStackManager.LayerSchema.ComponentPlacement, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">BodyUp</Property>
+              <Property Name="CopperOrientation" Type="Altium.LayerStackManager.LayerSchema.CopperOrientation, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">Above</Property>
+              <Property Name="Weight" Type="MassValue">28.35g</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="d2dcef9d-1aa7-4665-9bf9-b105029afe78" TypeId="92b02d5e-8d69-48a8-880e-ac4b77db099d" Name="Dielectric 1">
+            <Properties>
+              <Property Name="Thickness" Type="LengthValue">1.6mm</Property>
+              <Property Name="Material" Type="String">FR-4</Property>
+              <Property Name="DielectricConstant" Type="DimensionlessValue">4.8</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="da2eef9f-7b35-4ae6-a74f-80340bfcb863" TypeId="f4eccd87-2cfb-4f37-be50-4f3a272b4d01" Name="L2">
+            <Properties>
+              <Property Name="Thickness" Type="LengthValue">0.036mm</Property>
+              <Property Name="ComponentPlacement" Type="Altium.LayerStackManager.LayerSchema.ComponentPlacement, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">BodyDown</Property>
+              <Property Name="CopperOrientation" Type="Altium.LayerStackManager.LayerSchema.CopperOrientation, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">Below</Property>
+              <Property Name="Weight" Type="MassValue">28.35g</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="5dce19b7-c764-44dd-b1c5-7873b11a0f5e" TypeId="7b384237-13d8-4318-8bcb-accd8d9a51e7" Name="Bottom Solder">
+            <Properties>
+              <Property Name="Thickness" Type="LengthValue">0.01mm</Property>
+              <Property Name="Material" Type="String">Solder Resist</Property>
+              <Property Name="DielectricConstant" Type="DimensionlessValue">3.5</Property>
+              <Property Name="CoverlayExpansion" Type="LengthValue">0mm</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="bd2ac5f3-10c6-49bb-ba5a-dd23567561dc" TypeId="c7ef040e-8d00-490b-b00c-a7e7823ff174" Name="Bottom Overlay">
+            <Properties />
+          </Layer>
+        </Layers>
+        <ViaSpans>
+          <ViaSpan Id="6c2cd4ac-093b-46a7-95df-93f7191d8433" AutoName="Thru 1:2" Type="ThruVia" StartLayerId="16274362-9bff-4b3e-a340-40af0d2daedb" StopLayerId="da2eef9f-7b35-4ae6-a74f-80340bfcb863" />
+        </ViaSpans>
+        <DrillSpans />
+      </Stack>
+      <Stack Id="67bde6a9-e855-4dfd-aec8-d65c74aeb53c" Name="Board Layer Stack" Type="BoardRegionLayerStack">
+        <Layers>
+          <Layer Id="3ab488cb-07ad-4d7c-b0ee-2b54cee1f04c" TypeId="c7ef040e-8d00-490b-b00c-a7e7823ff174" Name="Top Overlay">
+            <Properties />
+          </Layer>
+          <Layer Id="d205398c-7081-482f-8f16-66371ced2806" TypeId="7b384237-13d8-4318-8bcb-accd8d9a51e7" Name="Top Solder">
+            <Properties />
+          </Layer>
+          <Layer Id="16274362-9bff-4b3e-a340-40af0d2daedb" TypeId="f4eccd87-2cfb-4f37-be50-4f3a272b4d01" Name="L1">
+            <Properties>
+              <Property Name="CopperOrientation" Type="Altium.LayerStackManager.LayerSchema.CopperOrientation, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">Above</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="d2dcef9d-1aa7-4665-9bf9-b105029afe78" TypeId="92b02d5e-8d69-48a8-880e-ac4b77db099d" Name="Dielectric 1">
+            <Properties />
+          </Layer>
+          <Layer Id="da2eef9f-7b35-4ae6-a74f-80340bfcb863" TypeId="f4eccd87-2cfb-4f37-be50-4f3a272b4d01" Name="L2">
+            <Properties>
+              <Property Name="CopperOrientation" Type="Altium.LayerStackManager.LayerSchema.CopperOrientation, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">Above</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="5dce19b7-c764-44dd-b1c5-7873b11a0f5e" TypeId="7b384237-13d8-4318-8bcb-accd8d9a51e7" Name="Bottom Solder">
+            <Properties />
+          </Layer>
+          <Layer Id="bd2ac5f3-10c6-49bb-ba5a-dd23567561dc" TypeId="c7ef040e-8d00-490b-b00c-a7e7823ff174" Name="Bottom Overlay">
+            <Properties />
+          </Layer>
+        </Layers>
+        <ViaSpans />
+        <DrillSpans />
+      </Stack>
+      <Stack Id="c3698100-05cc-4d9a-9983-d83c5867cf08" Name="Board Layer Stack" Type="BoardRegionLayerStack">
+        <Layers>
+          <Layer Id="3ab488cb-07ad-4d7c-b0ee-2b54cee1f04c" TypeId="c7ef040e-8d00-490b-b00c-a7e7823ff174" Name="Top Overlay">
+            <Properties />
+          </Layer>
+          <Layer Id="d205398c-7081-482f-8f16-66371ced2806" TypeId="7b384237-13d8-4318-8bcb-accd8d9a51e7" Name="Top Solder">
+            <Properties />
+          </Layer>
+          <Layer Id="16274362-9bff-4b3e-a340-40af0d2daedb" TypeId="f4eccd87-2cfb-4f37-be50-4f3a272b4d01" Name="L1">
+            <Properties>
+              <Property Name="CopperOrientation" Type="Altium.LayerStackManager.LayerSchema.CopperOrientation, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">Above</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="d2dcef9d-1aa7-4665-9bf9-b105029afe78" TypeId="92b02d5e-8d69-48a8-880e-ac4b77db099d" Name="Dielectric 1">
+            <Properties />
+          </Layer>
+          <Layer Id="da2eef9f-7b35-4ae6-a74f-80340bfcb863" TypeId="f4eccd87-2cfb-4f37-be50-4f3a272b4d01" Name="L2">
+            <Properties>
+              <Property Name="CopperOrientation" Type="Altium.LayerStackManager.LayerSchema.CopperOrientation, Altium.LayerStackManager.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51600b9dd346ed18">Above</Property>
+            </Properties>
+          </Layer>
+          <Layer Id="5dce19b7-c764-44dd-b1c5-7873b11a0f5e" TypeId="7b384237-13d8-4318-8bcb-accd8d9a51e7" Name="Bottom Solder">
+            <Properties />
+          </Layer>
+          <Layer Id="bd2ac5f3-10c6-49bb-ba5a-dd23567561dc" TypeId="c7ef040e-8d00-490b-b00c-a7e7823ff174" Name="Bottom Overlay">
+            <Properties />
+          </Layer>
+        </Layers>
+        <ViaSpans>
+          <ViaSpan Id="a14ca7ad-553f-4468-921f-86bb30e7494e" AutoName="Thru 1:2" Type="ThruVia" StartLayerId="16274362-9bff-4b3e-a340-40af0d2daedb" StopLayerId="da2eef9f-7b35-4ae6-a74f-80340bfcb863" />
+        </ViaSpans>
+        <DrillSpans />
+      </Stack>
+    </Stacks>
+    <ImpedanceProfiles />
+  </Stackup>
+</StackupDocument>
